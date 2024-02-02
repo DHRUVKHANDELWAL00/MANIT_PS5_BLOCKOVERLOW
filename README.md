@@ -45,8 +45,6 @@ The primary goal of this challenge is to design and implement an Object Recognit
 
 ## Tools Used
 
-<!-- * Firebase
-* SwiperJS -->
 
 - Figma
 - TensorFlow.js
