@@ -1,0 +1,190 @@
+
+{% extends "base.html" %} {% block content %}
+<section id= "Home">
+<div class="hero-image">
+  <div class="hero-container">
+  <h1 class="hero_text">TrashTech: AI Waste Classifier</h1> <br><br><br>
+  <!-- <p class="hero_subtext">
+    The ultimate waste management solution, powered by advanced deep learning algorithms that enable
+    precise classification of waste images for efficient recycling and reduced landfill and ocean waste.
+    But that's not all - our intelligent platform also recommends creative upcycling craft ideas to
+    promote a circular economy, making TrashTech the go-to tool for a greener, more sustainable future.</p>
+  </div> -->
+</div>
+
+</section>
+ <section id = "home-2">
+  <div class="hero-texte">
+    <div class="hero-container">
+    <p class="hero_subtext">
+      The ultimate waste management solution, powered by advanced deep learning algorithms that enable
+      precise classification of waste images for efficient recycling and reduced landfill and ocean waste.
+      But that's not all - our intelligent platform also recommends creative upcycling craft ideas to
+      promote a circular economy, making TrashTech the go-to tool for a greener, more sustainable future.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id= "Classifier">
+<!--<div class="card">
+  <h1 class="display-4">Garbage Classification</h1>
+  <h4 >This Deep Learning model was trained on Garbage Classification Dataset.</h4>
+  <hr class="my-4">
+  <h5 >Garbage Classification Dataset contains 6 classifications: cardboard , glass , metal , paper, plastic and trash.</h5>
+
+  <form id="upload-file" method="post" enctype="multipart/form-data" class="my-5">
+    <div class="form-group">
+      <label for="imageUpload">Choose Images...</label>
+      <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg" class="form-control-file">
+    </div>
+    <button type="button" class="btn btn-primary btn-lg" id="btn-predict">Predict!</button>
+  </form>
+
+  <div class="image-section" style="display:none;">
+    <div class="img-preview">
+      <div id="imagePreview"></div>
+    </div>
+  </div>
+
+  <div class="loader" style="display:none;"></div>
+
+  <h3 id="result" class="mt-5">
+    <span> </span>
+  </h3>
+</div> -->
+
+<div class="card">
+  <div class="card-body">
+    <h1 class="card-title display-4">Garbage Classification</h1>
+    <h4 class="card-text">This Deep Learning model was trained on Garbage Classification Dataset.</h4>
+    <hr>
+    <h5 class="card-text">Garbage Classification Dataset contains 6 classifications: cardboard , glass , metal , paper, plastic and trash.</h5>
+
+    <form id="upload-file" method="post" enctype="multipart/form-data" class="my-5">
+      <div class="form-group">
+        <!-- <label for="imageUpload">Choose Images...</label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg" class="form-control-file">
+      </div>
+       -->
+      <input type="file" name="file" id="file" class="input-file">
+      <label for="file" class="btn btn-tertiary js-labelFile">
+        <i class="icon fa fa-check"></i>
+        <span class="js-fileName">Choose a file</span>
+      </label>
+      <div class="image-section" style="display:none;">
+        <div class="img-preview">
+          <div id="imagePreview"></div>
+          <button type="button" class="btn btn-primary btn-lg" id="btn-predict">Predict!</button>
+        </div>
+
+    </form>
+
+
+
+    <!-- <div class="d-flex justify-content-center loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div> -->
+
+    </div>
+
+    <h3 id="result" class="mt-5">
+      <span> </span>
+    </h3>
+  </div>
+</div>
+
+</section>
+
+<section id ="Solution">
+  <h1 class="main-t">
+    Upcycling Craft Ideas </h1>
+  <h2 class="sub-t">
+    Creative Inspiration for Giving Your Waste New Life  </h2>
+  <div class="container">
+
+<div id="videoCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#videoCarousel" data-slide-to="1"></li>
+      <li data-target="#videoCarousel" data-slide-to="2"></li>
+      <li data-target="#videoCarousel" data-slide-to="3"></li>
+      <li data-target="#videoCarousel" data-slide-to="4"></li>
+      <li data-target="#videoCarousel" data-slide-to="5"></li>
+      <li data-target="#videoCarousel" data-slide-to="6"></li>
+      <!-- Add more indicators as needed -->
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="video carousel-item active iframe-container">
+        <iframe width="660" height="375" src="https://www.youtube.com/embed/HkHEJEzMKwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      </div>
+      <div class=" video carousel-item iframe-container ">
+        <iframe width="660" height="375" src="https://www.youtube.com/embed/DjDaj6rkW0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      </div>
+      <div class=" video carousel-item iframe-container ">
+        <iframe width="660" height="375" src="https://www.youtube.com/embed/DMiDFoa04_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      </div>
+      <div class=" video carousel-item iframe-container ">
+        <iframe width="660" height="375" src="https://www.youtube.com/embed/uZN7IRT7xvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      </div>
+      <div class=" video carousel-item iframe-container ">
+        <iframe width="660" height="375" src="https://www.youtube.com/embed/61ZJfm-JDQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      </div>
+      <div class=" video carousel-item iframe-container ">
+        <iframe width="660" height="375" src="https://www.youtube.com/embed/etg6tf-R008" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      </div>
+      <div class=" video carousel-item iframe-container ">
+        <iframe width="660" height="375" src="https://www.youtube.com/embed/mbRI854-Fl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      </div>
+      <!-- Add more carousel items with embedded YouTube videos -->
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+  <h3>Join us in creating a sustainable future with our Waste Classifier and Upcycling Advisor. Repurpose your waste with creative upcycling ideas and help reduce landfill and ocean waste. Let's build a better world together!</h3>
+
+
+	<div class="row" id="what-if">
+    <br>
+    <hr>
+    <div class="col-md-6 col-xs-6 classy_frame" style="padding-top: 0%; padding-bottom: 2%;">
+      <center><h2 class = "vid" style="text-transform: capitalize;">What If We Stopped Recycling?</h2></center>
+
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8fFJOzXxB54" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-6 col-xs-6 classy_frame" style="padding-top: 0%; padding-bottom: 2%;">
+      <center><h2 class = "vid" style="text-transform: capitalize;">What If We Created No Waste?</h2></center>
+
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wWbL7Mv2MFw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="motivation">
+    <br>
+    <hr>
+    <center><h2  class = "vid"style="text-transform: capitalize;">Why We Need Awareness</h2></center>
+    <div class="col-md-12 classy_frame" style="padding-top: 2%; padding-bottom: 2%;">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="350" height="200" src="https://www.youtube.com/embed/NhF4pXBNfq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+{% endblock %}
+=======
+

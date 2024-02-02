@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Plugin file -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/addons/datatables.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Sora&family=Unbounded:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Waste Classifier</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link
+      href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 navbar_scrolled">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img class = "logo" src="../static/images/logo.png"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="#Home">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="#Classifier">Classifier</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Solution">Craft</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div>
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+      <div id="content" >{% block content %}{% endblock %}</div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
+    <script>
+      window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.togg1e( "sticky", window.scrollY > 0);})
+      </script>
+      <footer id="footer" class="bg-success text-white d-flex-column text-center">
+        <hr class="mt-0">
+        <!--Social buttons-->
+        <div class="text-center">
+          <h4 href="#"> Wastify </h4>
+          <h6>You can find me at</h6>
+          <ul class="list-unstyled list-inline">
+
+            <li class="list-inline-item">
+              <a href="#" target="_blank" class="sbtn btn-large mx-1" title="Linkedin">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/Kartikay45" target="_blank" class="sbtn btn-large mx-1" title="Github">
+                <i class="fab fa-github-square fa-2x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank" class="sbtn btn-large mx-1" title="Twitter">
+                <i class="fab fa-twitter-square fa-2x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank" class="sbtn btn-large mx-1" title="Youtube">
+                <i class="fab fa-youtube-square fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--/.Social buttons
+         <hr class="mb-0"> -->
+
+        <!-- <div class="container text-left text-md-center">
+          <div class="row">
+
+            <div class="col-md-3 mx-auto shfooter">
+              <h5 class="my-2 font-weight-bold d-none d-md-block">Developers</h5>
+              <div class="d-md-none title" data-target="#Developers" data-toggle="collapse">
+                <div class="mt-3 font-weight-bold">Developers
+                  <div class="float-right navbar-toggler">
+                    <i class="fas fa-angle-down"></i>
+                    <i class="fas fa-angle-up"></i>
+                  </div>
+                </div>
+              </div>
+              <ul class="list-unstyled collapse" id="Developers">
+                <li><a href="https://www.linkedin.com/in/kartikeymish/">Kartikey Mishra</a></li>
+                <li><a href="https://www.linkedin.com/in/prakhyat-srivastava-0530791b3/">Prakhyat Srivastatva</a></li>
+                <li><a href="https://www.linkedin.com/in/manan-patel-b3b0ab1bb/">Manan Patel</a></li>
+                <li><a href="https://www.linkedin.com/in/aditya-baraiya-2488391b0/">Aditya Bairiya</a></li>
+                <li><a href="https://www.linkedin.com/in/nandini-singh-1857a61b8/">Nandani Singh</a></li>
+                <li><a href="https://www.linkedin.com/in/sagar-suman-4b5566147/">Sagar Suman</a></li>
+              </ul>
+            </div> -->
+            <!--/.First column-->
+            <hr class="clearfix w-100 d-md-none mb-0">
+
+            <!--Fourth column-->
+            <div class="col-md-3 mx-auto shfooter">
+              <h5 class="my-2 font-weight-bold d-none d-md-block">Help</h5>
+              <div class="d-md-none title" data-target="#Get-Help" data-toggle="collapse">
+                <div class="mt-3 font-weight-bold">Get Help
+                  <div class="float-right navbar-toggler">
+                    <i class="fas fa-angle-down"></i>
+                    <i class="fas fa-angle-up"></i>
+                  </div>
+                </div>
+              </div>
+              <ul class="list-unstyled collapse" id="Get-Help">
+                <li><a href="#" target="">Help</a></li>
+                <li><a href="mailto:sharma.kartik22a@gmail.com">Contact Us</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+            </div>
+            <!--/.Fourth column-->
+          </div>
+        </div>
+        <!--/.Footer Links-->
+        <hr class="mb-0">
+        <!--Copyright-->
+        <div class="py-3 text-center">
+          Copyright
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          <a href="https://github.com/Kartikay45/">Wastify</a>
+        </div>
+        <!--/.Copyright-->
+      </footer>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Plugin file -->
+      <script src="./js/addons/datatables.min.js"></script>
+  </body>
+</html>
