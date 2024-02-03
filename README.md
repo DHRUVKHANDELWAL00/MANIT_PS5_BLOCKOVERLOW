@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+<img align="center" width="100%" src="./images/wastify.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# WASTIFY
 
-## Available Scripts
+An end-to-end recyclable waste management website.<br/>
 
-In the project directory, you can run:
+## Problem Statement
 
-### `npm start`
+Waste management is a critical global challenge, and proper segregation of waste is crucial for effective recycling. The challenge is to develop an Object Recognition Application that uses computer vision to identify and segregate waste items into recyclable and non-recyclable categories. This application aims to streamline the waste management process, promoting environmental sustainability.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Objectives
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The primary goal of this challenge is to design and implement an Object Recognition Application that utilizes computer vision to accurately identify and segregate waste items into recyclable and non-recyclable categories. The application should enhance the efficiency of waste management processes and promote sustainable practices.
 
-### `npm test`
+- To bridge the gap between various stake holders of the Recyclable Waste ecosystem.
+- Facilitate a dynamic website to users with a personalized experience to each one.
+- Help the user to schedule pickup according to their convenience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Functional Requirements
 
-### `npm run build`
+1. Image Recognition Algorithm:
+   ○ Implement a robust image recognition algorithm capable of identifying various waste
+   items with high accuracy.
+2. Recyclable and Non-recyclable Classification:
+   ○ Develop classification models that can differentiate waste items into recyclable and
+   non-recyclable categories based on the recognized images.
+3. Real-time Processing:
+   ○ Ensure the application can process images in real-time, making it practical for use in
+   waste processing facilities or even in mobile applications for individuals.
+4. Integration with Robotics:
+   ○ Explore the possibility of integrating the application with robotic systems for
+   automated waste segregation in large-scale facilities.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## TechStack Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML
+- CSS
+- JavaScript
+- NodeJS
+- MongoDB
+- ExpressJS
+- ReactJS
+- Python
+-
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tools Used
 
-### `npm run eject`
+<!-- * Firebase
+* SwiperJS -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Figma
+- TensorFlow.js
+- Pytorch
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Profile                                      | Name             | GithubID                                                   | EmailID                       | LinkedIN                                                                   |
+| -------------------------------------------- | ---------------- | ---------------------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------- |
+| <img src="./images/kartik.jpeg" width="160"> | Kartik Sharma    | [@Kartik Sharma](https://github.com/Kartikay45)            | sharma.kartik22a@gmail.com    | [kartik-Sharma](https://www.linkedin.com/in/kartik-sharma-29a9b824a/)      |
+| <img src="./images/ut.jpeg" width="160">     | Utkarsh Sharma   | [@Utkarsh-Sharma](https://github.com/02utkarsh)            | utkatsh7424sharma@gmail.com   | [Utkarsh Sharma](https://www.linkedin.com/in/utkarsh-sharma-90b763237/)    |
+| <img src="./images/dhru.jpeg" width="160">   | Dhruv Khandelwal | [@DHRUVKHANDELWAL))](https://github.com/DHRUVKHANDELWAL00) | khandelwaldhruv2003@gmail.com | [dhruvkhandelwal](https://www.linkedin.com/in/dhruv-khandelwal-2332a81a3/) |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Successfull Deployment
 
-## Learn More
+The website is up and running. One can check the live deployment [here](https://redivivuspickupguy.web.app/).<br/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![gif](https://github.com/Vivek-Hotti/REDIVIVUS/blob/e6cf28790225e9fb3318811895d2a339e9e59217/images&visuals/redvivusgif.gif)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- ## ➤ Homepage:
+<img src="https://github.com/Vivek-Hotti/REDIVIVUS/blob/main/images%26visuals/homepage.JPG">
 
-### Code Splitting
+## ➤ Our Services:
+<img src="https://github.com/Vivek-Hotti/REDIVIVUS/blob/main/images%26visuals/services.JPG">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## ➤ About Us:
+<img src="https://github.com/Vivek-Hotti/REDIVIVUS/blob/main/images%26visuals/about.JPG">
 
-### Analyzing the Bundle Size
+## ➤ Contact:
+<img src="https://github.com/Vivek-Hotti/REDIVIVUS/blob/main/images%26visuals/contact.JPG">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ➤ Dev Team:
+<img src="https://github.com/Vivek-Hotti/REDIVIVUS/blob/main/images%26visuals/Screenshot-dev.png"> -->
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+    <i>2023© Wastify. <br/>
+    All Rights Reserved. <br/>
+    (This website was created by Block Overflow team.)</i>
+</p>
