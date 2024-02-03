@@ -60,26 +60,7 @@ The primary goal of this challenge is to design and implement an Object Recognit
 | <img src="./images/ut.jpeg" width="160">     | Utkarsh Sharma   | [@Utkarsh-Sharma](https://github.com/02utkarsh)            | utkatsh7424sharma@gmail.com   | [Utkarsh Sharma](https://www.linkedin.com/in/utkarsh-sharma-90b763237/)    |
 | <img src="./images/dhru.jpeg" width="160">   | Dhruv Khandelwal | [@DHRUVKHANDELWAL))](https://github.com/DHRUVKHANDELWAL00) | khandelwaldhruv2003@gmail.com | [dhruvkhandelwal](https://www.linkedin.com/in/dhruv-khandelwal-2332a81a3/) |
 
-## Successfull Deployment
 
-The website is up and running. One can check the live deployment [here](https://redivivuspickupguy.web.app/).<br/>
-
-![gif](https://github.com/Vivek-Hotti/REDIVIVUS/blob/e6cf28790225e9fb3318811895d2a339e9e59217/images&visuals/redvivusgif.gif)
-
-<!-- ## ➤ Homepage:
-<img src="https://github.com/Vivek-Hotti/REDIVIVUS/blob/main/images%26visuals/homepage.JPG">
-
-## ➤ Our Services:
-<img src="https://github.com/Vivek-Hotti/REDIVIVUS/blob/main/images%26visuals/services.JPG">
-
-## ➤ About Us:
-<img src="https://github.com/Vivek-Hotti/REDIVIVUS/blob/main/images%26visuals/about.JPG">
-
-## ➤ Contact:
-<img src="https://github.com/Vivek-Hotti/REDIVIVUS/blob/main/images%26visuals/contact.JPG">
-
-## ➤ Dev Team:
-<img src="https://github.com/Vivek-Hotti/REDIVIVUS/blob/main/images%26visuals/Screenshot-dev.png"> -->
 
 <p align="center">
     <i>2023© Wastify. <br/>
