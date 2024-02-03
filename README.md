@@ -32,7 +32,8 @@ The primary goal of this challenge is to design and implement an Object Recognit
    automated waste segregation in large-scale facilities.
 
 
-##Integration with Robotics
+
+## Integration with Robotics
 <img align="center" width="100%" src="./images/robotics.jpeg">
 
 ## TechStack Used
