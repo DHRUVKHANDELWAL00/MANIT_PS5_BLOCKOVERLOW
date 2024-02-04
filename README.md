@@ -35,6 +35,8 @@ The primary goal of this challenge is to design and implement an Object Recognit
 
 ## Integration with Robotics
 <img align="center" width="100%" src="./images/robotics.jpeg">
+## Workflow
+The Arduino project for waste segregation employs ultrasonic and soil sensors to efficiently categorize different types of waste. The ultrasonic sensor measures waste levels in bins, while the soil sensor detects moisture in organic waste. The Arduino code processes sensor data, triggering the segregation mechanism based on predefined thresholds. This mechanism can involve moving bins to designated areas or activating alerts for manual segregation. A feedback system, integrating LEDs or displays, communicates the segregation status. Rigorous testing and calibration ensure accuracy, and optional integration with external systems enhances functionality. Documenting the project and deploying it completes the process, promoting effective waste management.
 
 ## TechStack Used
 
@@ -46,7 +48,9 @@ The primary goal of this challenge is to design and implement an Object Recognit
 - ExpressJS
 - ReactJS
 - Python
--
+- Flask
+- Neural Networks
+- TensorFlow
 
 ## Tools Used
 
@@ -54,9 +58,10 @@ The primary goal of this challenge is to design and implement an Object Recognit
 * SwiperJS -->
 
 - Figma
-- TensorFlow
-
+- Arduino UNO
 - Pytorch
+- FC-28 (Soil Sensor)
+- HC-SR04 (Ultrasonic Sensor)
 
 ## Contributors
 
