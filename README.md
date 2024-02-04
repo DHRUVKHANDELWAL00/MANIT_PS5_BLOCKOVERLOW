@@ -1,4 +1,5 @@
-<img align="center" width="100%" src="./images/green.png">
+<img align="center" src="./images/green.png">
+
 
 # WASTIFY
 
