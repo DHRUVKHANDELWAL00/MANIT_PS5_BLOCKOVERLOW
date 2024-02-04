@@ -54,7 +54,8 @@ The primary goal of this challenge is to design and implement an Object Recognit
 * SwiperJS -->
 
 - Figma
-- TensorFlow.js
+- TensorFlow
+
 - Pytorch
 
 ## Contributors
